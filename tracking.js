@@ -14,6 +14,7 @@
 
   const STORAGE_PREFIX = 'mp_tracking_';
   const HOTMART_HOST = 'pay.hotmart.com';
+  const HOTMART_CHECKOUT = 'https://pay.hotmart.com/O108188542S?checkoutMode=10';
 
   function safeGet(key) {
     try {
@@ -104,6 +105,15 @@
     });
   }
 
+  function configureHeroCheckoutButton() {
+    const heroButton = document.querySelector('.hero .hero-copy .btn');
+    if (!heroButton) return;
+
+    heroButton.href = HOTMART_CHECKOUT;
+    heroButton.removeAttribute('onclick');
+    heroButton.textContent = 'QUIERO DESCUBRIR QUÉ PREPARARLE HOY POR US$9.99 🐶';
+  }
+
   // Expuesto para futuras integraciones (por ejemplo CRM/CAPI).
   window.getTrackingData = getTrackingData;
   window.decorateHotmartUrl = decorateHotmartUrl;
@@ -112,6 +122,7 @@
   saveAttribution(current);
 
   function init() {
+    configureHeroCheckoutButton();
     decorateHotmartLinks(document);
 
     // Respaldo: asegura que un enlace añadido dinámicamente también salga con atribución.

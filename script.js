@@ -6,7 +6,7 @@
     const style = document.createElement('style');
     style.id = 'momento-offer-mobile-styles';
     style.textContent = `
-      #oferta{content-visibility:visible!important;scroll-margin-top:12px}
+      #oferta{content-visibility:visible!important;scroll-margin-top:0}
       #oferta .value-list.value-ladder{display:grid;gap:12px;margin:22px 0}
       #oferta .value-ladder .value-step{display:grid;grid-template-columns:42px 1fr;gap:12px;align-items:start;padding:15px 16px;border:1px solid rgba(255,255,255,.15);border-radius:16px;background:rgba(255,255,255,.075)}
       #oferta .value-ladder .value-step-num{width:38px;height:38px;border-radius:12px;display:grid;place-items:center;background:#8de0d3;color:#17324d;font-weight:950;font-size:16px}
@@ -17,8 +17,11 @@
       #oferta .value-ladder .value-step-bonus .value-step-num{background:#fff1dc;color:#a9680c}
       #oferta .value-ladder .value-step-bonus small{color:#ffd89d}
       #oferta .offer-total{font-size:12px;font-weight:950;color:#247f75;letter-spacing:.08em;margin-bottom:4px}
+      @media(max-width:900px){
+        .section{content-visibility:visible!important;contain-intrinsic-size:auto!important}
+      }
       @media(max-width:560px){
-        #oferta.section{padding-top:32px;padding-bottom:34px}
+        #oferta.section{padding-top:24px;padding-bottom:34px}
         #oferta .wrap.offer{padding:18px 13px;border-radius:22px;gap:16px}
         #oferta .offer-grid{gap:16px}
         #oferta h2{font-size:28px;line-height:1.06;margin:12px 0 10px}
@@ -88,12 +91,48 @@
     if (buyButton) buyButton.href = CHECKOUT_URL;
   }
 
-  function scrollToOffer(behavior){
+  function prepareLayoutForOffer(){
+    document.querySelectorAll('.section').forEach(function(section){
+      section.style.contentVisibility = 'visible';
+      section.style.containIntrinsicSize = 'auto';
+    });
+    void document.documentElement.offsetHeight;
+  }
+
+  function exactOfferTop(){
+    const offer = document.getElementById('oferta');
+    if (!offer) return null;
+    return Math.max(0, Math.round(offer.getBoundingClientRect().top + window.pageYOffset));
+  }
+
+  function correctOfferPosition(){
+    const top = exactOfferTop();
+    if (top === null) return;
+    if (Math.abs(window.pageYOffset - top) > 3) {
+      window.scrollTo({top: top, behavior: 'auto'});
+    }
+  }
+
+  function scrollToOffer(){
     const offer = document.getElementById('oferta');
     if (!offer) return false;
-    offer.style.contentVisibility = 'visible';
-    const top = offer.getBoundingClientRect().top + window.pageYOffset - 8;
-    window.scrollTo({top: Math.max(0, top), behavior: behavior || 'smooth'});
+
+    prepareLayoutForOffer();
+    enhanceOffer();
+    void document.documentElement.offsetHeight;
+
+    const top = exactOfferTop();
+    if (top === null) return false;
+
+    window.scrollTo({top: top, behavior: 'smooth'});
+
+    requestAnimationFrame(function(){
+      requestAnimationFrame(function(){
+        setTimeout(correctOfferPosition, 350);
+        setTimeout(correctOfferPosition, 800);
+      });
+    });
+
     return true;
   }
 
@@ -101,9 +140,12 @@
     document.addEventListener('click', function(event){
       const link = event.target.closest('a[href="#oferta"], [data-scroll-to="oferta"]');
       if (!link) return;
-      if (scrollToOffer('smooth')) {
-        event.preventDefault();
-        event.stopPropagation();
+
+      event.preventDefault();
+      event.stopPropagation();
+      event.stopImmediatePropagation();
+
+      if (scrollToOffer()) {
         try { history.replaceState(null, '', '#oferta'); } catch (_) {}
       }
     }, true);
@@ -130,7 +172,11 @@
     setupSticky();
 
     if (location.hash === '#oferta') {
-      setTimeout(function(){ scrollToOffer('auto'); }, 80);
+      prepareLayoutForOffer();
+      setTimeout(function(){
+        correctOfferPosition();
+        setTimeout(correctOfferPosition, 400);
+      }, 100);
     }
   }
 

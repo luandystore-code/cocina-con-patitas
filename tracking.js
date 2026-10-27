@@ -112,6 +112,22 @@
     heroButton.href = HOTMART_CHECKOUT;
     heroButton.removeAttribute('onclick');
     heroButton.textContent = 'QUIERO DESCUBRIR QUÉ PREPARARLE HOY POR US$9.99 🐶';
+    heroButton.style.display = 'flex';
+    heroButton.style.width = '100%';
+    heroButton.style.justifyContent = 'center';
+    heroButton.style.alignItems = 'center';
+    heroButton.style.textAlign = 'center';
+
+    const heroMicro = document.querySelector('.hero .hero-copy .micro');
+    if (heroMicro) {
+      heroMicro.style.textAlign = 'center';
+    }
+
+    const heroProof = document.querySelector('.hero .hero-copy .mini-proof');
+    if (heroProof) {
+      heroProof.style.justifyContent = 'center';
+      heroProof.style.textAlign = 'center';
+    }
   }
 
   // Expuesto para futuras integraciones (por ejemplo CRM/CAPI).

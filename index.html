@@ -3,10 +3,39 @@
 <head>
 <meta charset="utf-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1" />
-<title>Momento Patitas™ | Dime qué tienes y te digo qué prepararle</title>
-<meta name="description" content="Momento Patitas™ convierte el momento, los ingredientes que tienes y tu tiempo disponible en una receta completa para tu perro. Incluye 40 recetas, ebook descargable y acceso al Club Momento Patitas™." />
+<title>Momento Patitas™ | Decide qué prepararle a tu perro en menos de 1 minuto</title>
+<meta name="description" content="Cada vez que quieras consentir a tu perro, deja de preguntarte qué hacer. Momento Patitas™ usa el momento, los ingredientes que tienes y tu tiempo para recomendarte recetas completas en menos de un minuto." />
 <link rel="preload" as="image" href="https://cdn.shopify.com/s/files/1/0697/0605/5728/files/cocina-patitas-hero-900.webp?v=1792911602" imagesrcset="https://cdn.shopify.com/s/files/1/0697/0605/5728/files/cocina-patitas-hero-480.webp?v=1792911538 480w, https://cdn.shopify.com/s/files/1/0697/0605/5728/files/cocina-patitas-hero-900.webp?v=1792911602 900w" imagesizes="(max-width: 900px) 100vw, 48vw" fetchpriority="high" />
 <link rel="stylesheet" href="styles.css">
+
+<style>
+.hero-price{display:flex;align-items:baseline;gap:10px;margin:18px 0 14px;flex-wrap:wrap}
+.hero-price strong{font-size:32px;line-height:1;color:var(--ink);letter-spacing:-.03em}
+.hero-price span{font-size:14px;font-weight:850;color:var(--teal-dark)}
+.hero-trust{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:9px;margin:14px 0 8px}
+.hero-trust span{display:flex;align-items:center;justify-content:center;text-align:center;min-height:42px;background:#fff;border:1px solid var(--line);border-radius:12px;padding:9px 10px;font-size:12.5px;font-weight:850;color:#40596a}
+.secondary-link{display:inline-block;margin-top:10px;color:var(--teal-dark);font-weight:850;text-decoration:underline;text-underline-offset:3px}
+.center-copy{text-align:center;max-width:860px;margin-left:auto;margin-right:auto}
+.scenario{max-width:880px;margin:28px auto 0;display:grid;gap:10px}
+.scenario-line{display:flex;align-items:flex-start;gap:12px;background:#fff;border:1px solid var(--line);border-radius:16px;padding:15px 17px;box-shadow:0 8px 24px rgba(24,50,77,.05)}
+.scenario-line b{min-width:28px;height:28px;border-radius:9px;background:#fff1dc;color:#a9680c;display:grid;place-items:center}
+.comparison-grid{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:16px;margin-top:30px}
+.comparison-card{background:#fff;border:1px solid var(--line);border-radius:20px;padding:21px;box-shadow:0 10px 30px rgba(24,50,77,.05)}
+.comparison-card strong{display:block;font-size:18px;margin-bottom:8px}
+.comparison-card.highlight{border:2px solid var(--teal);background:#f4fbf9}
+.comparison-card.highlight strong{color:var(--teal-dark)}
+.trust-banner{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:16px;margin-top:30px}
+.trust-card{background:#fff;border:1px solid var(--line);border-radius:20px;padding:22px;text-align:center;box-shadow:0 10px 30px rgba(24,50,77,.05)}
+.trust-card .icon{font-size:30px;margin-bottom:8px}
+.trust-card h3{font-size:20px;margin-bottom:8px}
+.trust-card p{font-size:14px;color:#536675;margin:0}
+.offer-safety{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:8px;margin-top:12px}
+.offer-safety span{background:#f4fbf9;border:1px solid #cfeae4;border-radius:12px;padding:9px 10px;font-size:12px;font-weight:850;color:#2f665e}
+.final-trust{display:flex;justify-content:center;gap:10px;flex-wrap:wrap;margin:14px auto 0}
+.final-trust span{background:#fff;border:1px solid var(--line);padding:8px 11px;border-radius:999px;font-size:12px;font-weight:850}
+@media(max-width:900px){.comparison-grid{grid-template-columns:repeat(2,minmax(0,1fr))}.trust-banner{grid-template-columns:minmax(0,1fr)}}
+@media(max-width:560px){.hero-price{justify-content:center;text-align:center}.hero-trust,.comparison-grid,.offer-safety{grid-template-columns:minmax(0,1fr)}.secondary-link{width:100%;text-align:center}.scenario-line{padding:13px}.hero-copy{text-align:center}.hero-copy ul{text-align:left}}
+</style>
 
 <!-- First-party attribution (UTMs + click IDs -> Hotmart) -->
 <script src="tracking.js" defer></script>
@@ -43,17 +72,23 @@ src="https://www.facebook.com/tr?id=3945503179000292&ev=PageView&noscript=1"/>
 <section class="hero">
   <div class="wrap grid hero-grid">
     <div class="hero-copy">
-      <span class="eyebrow">🐾 MOMENTO PATITAS™ · PARA MAMÁS Y PAPÁS PERRUNOS</span>
-      <h1>Dime qué tienes en casa y <span style="color:var(--teal)">te digo qué prepararle</span></h1>
-      <p class="lead">Elige qué quieres hacer con tu perro, marca los ingredientes que tienes y cuánto tiempo dispones. En segundos, Momento Patitas™ encuentra las mejores opciones y te muestra la receta completa paso a paso.</p>
+      <span class="eyebrow">🐾 PARA MAMÁS Y PAPÁS PERRUNOS QUE QUIEREN CONSENTIR SIN IMPROVISAR</span>
+      <h1>Cada vez que quieras consentir a tu perro, <span style="color:var(--teal)">deja de preguntarte qué hacer.</span></h1>
+      <p class="lead"><b>Abre Momento Patitas™ y decide en menos de un minuto.</b> Elige el momento, marca lo que tienes en casa y cuánto tiempo dispones. Recibes opciones concretas y la receta completa paso a paso.</p>
       <ul>
-        <li>No buscas entre decenas de recetas: el selector las filtra por ti.</li>
-        <li>Recibes 3 opciones según el momento, tus ingredientes y tu tiempo.</li>
-        <li>Abres la receta completa sin salir de la herramienta.</li>
+        <li>Usa los ingredientes que ya tienes y evita seguir buscando recetas al azar.</li>
+        <li>Recibe 3 recomendaciones según el momento, tus ingredientes y tu tiempo.</li>
+        <li>Abre ingredientes, cantidades, preparación, porción, conservación y tips.</li>
       </ul>
-      <a class="btn" href="#oferta" onclick="document.getElementById('oferta').scrollIntoView({behavior:'smooth',block:'start'}); return false;">QUIERO SABER QUÉ PREPARARLE →</a>
-      <div class="micro">📱 Herramienta digital · Funciona desde celular, tablet o computadora</div>
-      <div class="mini-proof"><span>40 recetas completas</span><span>Selector interactivo</span><span>Ebook incluido</span><span>Club privado incluido</span></div>
+      <div class="hero-price"><strong>US$9.99</strong><span>pago único · acceso digital</span></div>
+      <a class="btn" href="https://pay.hotmart.com/O108188542S?checkoutMode=10">QUIERO DESCUBRIR QUÉ PREPARARLE HOY POR US$9.99 🐶</a>
+      <div class="hero-trust">
+        <span>🔒 Pago seguro por Hotmart</span>
+        <span>🛡️ Garantía de 7 días</span>
+        <span>📱 Celular, tablet o computadora</span>
+        <span>🐾 Selector + 40 recetas + bonos</span>
+      </div>
+      <a class="secondary-link" href="#como-funciona">Prefiero ver primero cómo funciona ↓</a>
     </div>
     <div class="hero-art">
       <img src="https://cdn.shopify.com/s/files/1/0697/0605/5728/files/cocina-patitas-hero-900.webp?v=1792911602" srcset="https://cdn.shopify.com/s/files/1/0697/0605/5728/files/cocina-patitas-hero-480.webp?v=1792911538 480w, https://cdn.shopify.com/s/files/1/0697/0605/5728/files/cocina-patitas-hero-900.webp?v=1792911602 900w" sizes="(max-width: 900px) 100vw, 48vw" width="900" height="1125" loading="eager" decoding="async" fetchpriority="high" alt="Momento Patitas para elegir recetas caseras para perros" />
@@ -62,31 +97,49 @@ src="https://www.facebook.com/tr?id=3945503179000292&ev=PageView&noscript=1"/>
   </div>
 </section>
 
+<section class="section alt">
+  <div class="wrap">
+    <div class="center-copy">
+      <span class="eyebrow">SI ESTO TE PASA, MOMENTO PATITAS™ ES PARA TI</span>
+      <h2 style="margin-top:14px">Quieres darle algo especial. El problema empieza cuando toca decidir qué.</h2>
+      <p class="lead" style="margin-left:auto;margin-right:auto">No te faltan recetas en internet. Te falta una forma rápida de elegir una que encaje con lo que tienes, el tiempo disponible y el momento que quieres compartir con tu perro.</p>
+    </div>
+    <div class="scenario">
+      <div class="scenario-line"><b>1</b><div><strong>Miras la cocina.</strong><br>Tienes banana, avena, quizá un huevo… pero todavía no sabes qué preparar.</div></div>
+      <div class="scenario-line"><b>2</b><div><strong>Empiezas a buscar.</strong><br>Videos, capturas y recetas guardadas. Una pide algo que no tienes; otra tarda demasiado.</div></div>
+      <div class="scenario-line"><b>3</b><div><strong>Terminas improvisando.</strong><br>Momento Patitas™ elimina esa indecisión: marcas lo que tienes y te ayuda a escoger.</div></div>
+    </div>
+  </div>
+</section>
+
 <section class="section soft">
   <div class="wrap offer promise-offer">
     <span class="eyebrow" style="background:rgba(255,255,255,.12);color:#fff">LA PROMESA DE MOMENTO PATITAS™</span>
-    <h2 style="margin-top:14px">De “¿qué le preparo?” a tener una receta completa lista para seguir en menos de un minuto.</h2>
-    <p class="muted" style="font-size:18px;max-width:860px">No necesitas acumular cientos de recetas. Necesitas que alguien te ayude a elegir la correcta cuando tu perro te mira y quieres darle algo especial.</p>
+    <h2 style="margin-top:14px">De “¿qué le preparo?” a una receta concreta lista para seguir en menos de un minuto.</h2>
+    <p class="muted" style="font-size:18px;max-width:900px">Cada vez que quieras consentir a tu perro, deja de volver a empezar desde cero. Abre Momento Patitas™, responde tres cosas y decide qué preparar.</p>
   </div>
 </section>
 
 <section class="section">
   <div class="wrap">
-    <span class="eyebrow">EL PROBLEMA DE LOS RECETARIOS TRADICIONALES</span>
-    <h2 style="margin-top:14px">Te dan más opciones. Pero la decisión sigue siendo tuya.</h2>
-    <p class="lead">Puedes tener 50, 100 o 200 recetas y aun así volver a preguntarte: “¿cuál hago hoy?”. Momento Patitas™ empieza exactamente donde los recetarios terminan: ayudándote a decidir.</p>
-    <div class="grid pain-grid">
-      <div class="card"><div class="icon">🔎</div><h3>Dejas de buscar</h3><p>Ya no saltas entre videos, capturas y recetas guardadas intentando encontrar una que encaje.</p></div>
-      <div class="card"><div class="icon">🥕</div><h3>Aprovechas lo que tienes</h3><p>Marcas tus ingredientes y el selector prioriza recetas que puedes preparar con menos compras.</p></div>
-      <div class="card"><div class="icon">⏱️</div><h3>Eliges según tu tiempo</h3><p>Si tienes pocos minutos, te lleva a opciones rápidas. Si no tienes prisa, amplía las posibilidades.</p></div>
+    <div class="center-copy">
+      <span class="eyebrow">LA DIFERENCIA NO ES TENER MÁS RECETAS</span>
+      <h2 style="margin-top:14px">Es dejar de perder tiempo decidiendo cuál hacer.</h2>
+      <p class="lead" style="margin-left:auto;margin-right:auto">Las recetas gratis siguen siendo útiles. Momento Patitas™ resuelve otra parte del problema: convertir tus ingredientes y tu tiempo disponible en una decisión concreta.</p>
+    </div>
+    <div class="comparison-grid">
+      <div class="comparison-card"><strong>Google</strong><p>Te da muchas opciones y tú filtras cuál podría servirte.</p></div>
+      <div class="comparison-card"><strong>Videos y redes</strong><p>Te inspiran, pero vuelves a buscar cada vez que necesitas una idea.</p></div>
+      <div class="comparison-card"><strong>Un recetario</strong><p>Te entrega una biblioteca, pero la decisión de hoy sigue siendo tuya.</p></div>
+      <div class="comparison-card highlight"><strong>Momento Patitas™</strong><p>Le dices qué momento buscas, qué tienes y cuánto tiempo dispones. Te ayuda a elegir.</p></div>
     </div>
   </div>
 </section>
 
-<section class="section alt">
+<section class="section alt" id="como-funciona">
   <div class="wrap">
     <span class="eyebrow">ASÍ FUNCIONA MOMENTO PATITAS™</span>
-    <h2 style="margin-top:14px">Tres respuestas. Una recomendación mucho más útil.</h2>
+    <h2 style="margin-top:14px">Tres respuestas. Una decisión mucho más fácil.</h2>
     <div class="grid mechanism">
       <div class="step"><h3>Elige el momento</h3><p>Premiarlo, refrescarlo, celebrar, entrenar, preparar algo suave o simplemente consentirlo.</p></div>
       <div class="step"><h3>Marca lo que tienes</h3><p>Banana, avena, pollo, calabaza, yogur, zanahoria y otros ingredientes cotidianos.</p></div>
@@ -106,8 +159,8 @@ src="https://www.facebook.com/tr?id=3945503179000292&ev=PageView&noscript=1"/>
       <div class="mock-result"><small>RECOMENDACIÓN</small><h3>Galletitas de banana y avena</h3><p>Ingredientes, cantidades, preparación, porción, conservación y tips dentro de la misma herramienta.</p></div>
     </div>
     <div>
-      <span class="eyebrow">NO TE ENTREGA SOLO UN NOMBRE</span>
-      <h2 style="margin-top:14px">Te muestra exactamente cómo hacerlo</h2>
+      <span class="eyebrow">NO TE ENTREGA SOLO UNA IDEA</span>
+      <h2 style="margin-top:14px">Te muestra exactamente cómo llevarla a la cocina</h2>
       <div class="stack">
         <div class="item"><div class="num">01</div><div><b>Ingredientes y cantidades</b><br><span>Ves exactamente qué necesitas y qué ingredientes ya tienes marcados.</span></div></div>
         <div class="item"><div class="num">02</div><div><b>Preparación paso a paso</b><br><span>Abres la receta completa directamente dentro de Momento Patitas™.</span></div></div>
@@ -166,12 +219,27 @@ src="https://www.facebook.com/tr?id=3945503179000292&ev=PageView&noscript=1"/>
   </div>
 </section>
 
+<section class="section">
+  <div class="wrap">
+    <div class="center-copy">
+      <span class="eyebrow">COMPRA CON TRANQUILIDAD</span>
+      <h2 style="margin-top:14px">La decisión de probarlo también debe sentirse fácil.</h2>
+      <p class="lead" style="margin-left:auto;margin-right:auto">Por eso reducimos las principales dudas antes de llevarte al checkout.</p>
+    </div>
+    <div class="trust-banner">
+      <div class="trust-card"><div class="icon">🔒</div><h3>Pago seguro por Hotmart</h3><p>El pago se procesa en la plataforma de Hotmart. Nosotros no te pedimos los datos de tu tarjeta dentro de esta página.</p></div>
+      <div class="trust-card"><div class="icon">🛡️</div><h3>Garantía de 7 días</h3><p>Tienes 7 días de garantía para solicitar el reembolso si decides que Momento Patitas™ no es para ti.</p></div>
+      <div class="trust-card"><div class="icon">📱</div><h3>Acceso digital</h3><p>Después de completar tu compra podrás usar Momento Patitas™ desde celular, tablet o computadora.</p></div>
+    </div>
+  </div>
+</section>
+
 <section class="section" id="oferta">
   <div class="wrap offer grid offer-grid">
     <div>
       <span class="eyebrow" style="background:rgba(255,255,255,.12);color:#fff">ACCESO COMPLETO A MOMENTO PATITAS™</span>
-      <h2 style="margin-top:14px">La próxima vez que quieras darle algo especial, no busques. Pregúntale a Momento Patitas™.</h2>
-      <p class="muted">Una herramienta creada para convertir lo que tienes, el momento y tu tiempo disponible en una receta concreta que puedas seguir de principio a fin.</p>
+      <h2 style="margin-top:14px">La próxima vez que quieras consentirlo, no vuelvas a empezar buscando. Abre Momento Patitas™ y decide.</h2>
+      <p class="muted">Convierte lo que tienes en casa, el momento y tu tiempo disponible en una receta concreta que puedas seguir de principio a fin.</p>
       <div class="value-list">
         <div class="value-item"><b>Selector Momento Patitas™</b> por ocasión, ingredientes y tiempo</div>
         <div class="value-item"><b>40 recetas completas</b> dentro de la herramienta</div>
@@ -182,14 +250,18 @@ src="https://www.facebook.com/tr?id=3945503179000292&ev=PageView&noscript=1"/>
         <div class="value-item"><b>BONO 1:</b> Ebook Cocina con Patitas descargable</div>
         <div class="value-item"><b>BONO 2:</b> Acceso al Club Momento Patitas™ en WhatsApp</div>
       </div>
-      <p class="note" style="background:rgba(255,255,255,.08);border-left-color:#8de0d3;color:#eaf4f8"><b>La diferencia:</b> otros productos te entregan recetas. Momento Patitas™ te ayuda a decidir cuál preparar hoy, te enseña exactamente cómo hacerla y te da un espacio para compartir el resultado.</p>
+      <p class="note" style="background:rgba(255,255,255,.08);border-left-color:#8de0d3;color:#eaf4f8"><b>La diferencia:</b> otros productos te entregan recetas. Momento Patitas™ te ayuda a decidir cuál preparar hoy y te enseña cómo hacerla.</p>
     </div>
     <div class="price-box">
       <div class="price-label">ACCESO COMPLETO</div>
       <div class="price">US$9<small>.99</small></div>
-      <p>Un solo pago para dejar de improvisar cada vez que quieras consentirlo.</p>
+      <p><b>Un solo pago</b> para dejar de improvisar cada vez que quieras consentirlo.</p>
       <div class="scarcity-note">🐾 Selector + 40 recetas + ebook + Club Momento Patitas™.</div>
-      <a class="btn" style="width:100%" href="https://pay.hotmart.com/O108188542S?checkoutMode=10">QUIERO MOMENTO PATITAS™ →</a>
+      <a class="btn" style="width:100%" href="https://pay.hotmart.com/O108188542S?checkoutMode=10">QUIERO MOMENTO PATITAS™ POR US$9.99 →</a>
+      <div class="offer-safety">
+        <span>🔒 Pago seguro por Hotmart</span>
+        <span>🛡️ Garantía de 7 días</span>
+      </div>
       <div class="micro">📱 Producto digital · Uso desde celular, tablet o computadora</div>
     </div>
   </div>
@@ -198,17 +270,20 @@ src="https://www.facebook.com/tr?id=3945503179000292&ev=PageView&noscript=1"/>
 <section class="section alt">
   <div class="wrap">
     <span class="eyebrow">PREGUNTAS FRECUENTES</span>
-    <h2 style="margin-top:14px;text-align:center">Antes de entrar a Momento Patitas™</h2>
+    <h2 style="margin-top:14px;text-align:center">Resuelve tus dudas antes de entrar</h2>
     <div class="faq">
-      <details open><summary>¿Momento Patitas™ es un ebook?</summary><p>No. El producto principal es una herramienta interactiva. Tú eliges el momento, los ingredientes y el tiempo disponible; el selector te recomienda recetas y puedes abrirlas completas dentro de la misma experiencia. El ebook se incluye como bono descargable.</p></details>
-      <details><summary>¿Cuántas recetas incluye?</summary><p>Empieza con 40 recetas completas organizadas en cinco categorías: horneadas, suaves, frías, celebración y entrenamiento/enriquecimiento.</p></details>
-      <details><summary>¿Qué incluye el Club Momento Patitas™?</summary><p>Es una comunidad privada en WhatsApp para compradores, creada para compartir fotos de las recetas que preparen, favoritos, avances y experiencias con sus perros. El enlace de ingreso se entrega dentro del contenido después de la compra.</p></details>
-      <details><summary>¿El grupo de WhatsApp ofrece asesoría veterinaria?</summary><p>No. Es una comunidad de experiencias y contenido educativo. No se ofrecen diagnósticos ni orientación veterinaria; ante alergias, enfermedades o dietas especiales debes consultar con un profesional veterinario.</p></details>
+      <details open><summary>¿El pago es seguro?</summary><p>Sí. Al tocar el botón de compra pasas al checkout de Hotmart, que procesa el pago. Esta página no solicita ni almacena los datos de tu tarjeta.</p></details>
+      <details><summary>¿Tengo garantía?</summary><p>Sí. Tu compra cuenta con 7 días de garantía para solicitar el reembolso si decides que Momento Patitas™ no es para ti.</p></details>
+      <details><summary>¿Qué recibo después de comprar?</summary><p>Recibes acceso digital a Momento Patitas™, con el selector de recetas, la biblioteca de 40 recetas, las funciones de favoritas y preparadas, el ebook descargable y el acceso al Club Momento Patitas™.</p></details>
+      <details><summary>¿Momento Patitas™ es un ebook?</summary><p>No. El producto principal es una herramienta interactiva. Tú eliges el momento, los ingredientes y el tiempo disponible; el selector te recomienda recetas y puedes abrirlas completas dentro de la misma experiencia. El ebook se incluye como bono descargable.</p></details>
+      <details><summary>¿Puedo usarlo desde mi celular?</summary><p>Sí. Momento Patitas™ está diseñado para funcionar desde celular, tablet o computadora.</p></details>
       <details><summary>¿Qué pasa si no tengo todos los ingredientes?</summary><p>El selector prioriza lo que ya tienes y te muestra cuáles de los ingredientes principales te faltan para cada recomendación.</p></details>
+      <details><summary>¿Cuántas recetas incluye?</summary><p>Empieza con 40 recetas completas organizadas en cinco categorías: horneadas, suaves, frías, celebración y entrenamiento/enriquecimiento.</p></details>
       <details><summary>¿Puedo ver la receta completa dentro del selector?</summary><p>Sí. Cada resultado puede abrirse y mostrar ingredientes, cantidades, preparación, rendimiento, cómo servir, conservación y consejos.</p></details>
+      <details><summary>¿Qué incluye el Club Momento Patitas™?</summary><p>Es una comunidad privada en WhatsApp para compradores, creada para compartir fotos de las recetas que preparen, favoritos, avances y experiencias con sus perros. El enlace de ingreso se entrega dentro del contenido después de la compra.</p></details>
       <details><summary>¿Las recetas reemplazan el alimento diario?</summary><p>No. Están planteadas como premios, snacks, celebraciones y enriquecimiento ocasional. La alimentación completa debe seguir cubriendo las necesidades nutricionales de tu perro.</p></details>
       <details><summary>¿Y si mi perro tiene alergias o una condición de salud?</summary><p>Si tiene alergias, una enfermedad, una dieta veterinaria o necesidades especiales, consulta primero con su veterinario antes de introducir ingredientes nuevos.</p></details>
-      <details><summary>¿Puedo usarlo desde mi celular?</summary><p>Sí. Momento Patitas™ está diseñado para funcionar desde celular, tablet o computadora.</p></details>
+      <details><summary>¿El Club ofrece asesoría veterinaria?</summary><p>No. Es una comunidad de experiencias y contenido educativo. No se ofrecen diagnósticos ni orientación veterinaria.</p></details>
     </div>
   </div>
 </section>
@@ -216,15 +291,16 @@ src="https://www.facebook.com/tr?id=3945503179000292&ev=PageView&noscript=1"/>
 <section class="section final">
   <div class="wrap">
     <span class="eyebrow">NO MÁS “¿QUÉ LE PREPARO HOY?”</span>
-    <h2 style="margin-top:14px">Tú pones el momento. Momento Patitas™ encuentra la receta.</h2>
-    <p class="lead" style="margin-left:auto;margin-right:auto">Menos tiempo buscando. Menos dudas eligiendo. Más momentos ricos con tu perro y una comunidad donde compartirlos.</p>
+    <h2 style="margin-top:14px">Cada vez que quieras consentir a tu perro, abre Momento Patitas™ y decide en menos de un minuto.</h2>
+    <p class="lead" style="margin-left:auto;margin-right:auto">Menos tiempo buscando. Menos dudas eligiendo. Más momentos especiales con tu perro.</p>
     <div class="visual"><img src="https://cdn.shopify.com/s/files/1/0697/0605/5728/files/cocina-patitas-hero-900.webp?v=1792911602" loading="lazy" decoding="async" alt="Momento Patitas recetas para perros"></div>
-    <a class="btn" href="https://pay.hotmart.com/O108188542S?checkoutMode=10">QUIERO MOMENTO PATITAS™ AHORA →</a>
+    <a class="btn" href="https://pay.hotmart.com/O108188542S?checkoutMode=10">QUIERO MOMENTO PATITAS™ POR US$9.99 →</a>
+    <div class="final-trust"><span>🔒 Pago seguro Hotmart</span><span>🛡️ Garantía 7 días</span><span>📱 Acceso digital</span></div>
     <p class="disclaimer">Material educativo. No sustituye consejo veterinario. Las necesidades y tolerancias varían según edad, tamaño, salud, actividad y dieta habitual de cada perro.</p>
   </div>
 </section>
 
-<div class="mobile-sticky"><div><b>Momento Patitas™</b><small>Selector + 40 recetas + ebook + club</small></div><a class="btn" href="https://pay.hotmart.com/O108188542S?checkoutMode=10">COMPRAR AHORA</a></div>
+<div class="mobile-sticky"><div><b>Momento Patitas™ · US$9.99</b><small>🔒 Hotmart · 🛡️ Garantía 7 días</small></div><a class="btn" href="https://pay.hotmart.com/O108188542S?checkoutMode=10">COMPRAR</a></div>
 <div class="spacer-mobile"></div>
 <script src="script.js"></script>
 </body>

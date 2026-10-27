@@ -111,22 +111,29 @@
 
     heroButton.href = HOTMART_CHECKOUT;
     heroButton.removeAttribute('onclick');
-    heroButton.textContent = 'QUIERO DESCUBRIR QUÉ PREPARARLE HOY POR US$9.99 🐶';
-    heroButton.style.display = 'flex';
-    heroButton.style.width = '100%';
-    heroButton.style.justifyContent = 'center';
-    heroButton.style.alignItems = 'center';
-    heroButton.style.textAlign = 'center';
+    heroButton.innerHTML = '<span style="display:block;width:100%;text-align:center;">QUIERO DESCUBRIR QUÉ PREPARARLE HOY POR US$9.99 🐶</span>';
+    heroButton.style.setProperty('display', 'grid', 'important');
+    heroButton.style.setProperty('place-items', 'center', 'important');
+    heroButton.style.setProperty('width', '100%', 'important');
+    heroButton.style.setProperty('text-align', 'center', 'important');
 
     const heroMicro = document.querySelector('.hero .hero-copy .micro');
     if (heroMicro) {
-      heroMicro.style.textAlign = 'center';
+      heroMicro.style.setProperty('width', '100%', 'important');
+      heroMicro.style.setProperty('text-align', 'center', 'important');
     }
 
     const heroProof = document.querySelector('.hero .hero-copy .mini-proof');
     if (heroProof) {
-      heroProof.style.justifyContent = 'center';
-      heroProof.style.textAlign = 'center';
+      heroProof.style.setProperty('display', 'flex', 'important');
+      heroProof.style.setProperty('justify-content', 'center', 'important');
+      heroProof.style.setProperty('align-items', 'center', 'important');
+      heroProof.style.setProperty('width', '100%', 'important');
+      heroProof.style.setProperty('text-align', 'center', 'important');
+
+      heroProof.querySelectorAll('span').forEach(function (chip) {
+        chip.style.setProperty('text-align', 'center', 'important');
+      });
     }
   }
 

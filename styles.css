@@ -30,3 +30,11 @@ img{max-width:100%;height:auto;display:block} picture,figure{max-width:100%;marg
   .hero-trust::after{content:'🔒 Hotmart · 🛡️ Garantía 7 días · 📧 Acceso por email';font-size:11.5px;font-weight:850;color:#40596a}
   .secondary-link{margin-top:8px;font-size:13px}
 }
+
+/* Ajuste visual final del Hero móvil: recupera la mirada del perro y saca el sello de encima de la foto */
+@media(max-width:560px){
+  .hero-grid{gap:12px}
+  .hero-art{overflow:visible}
+  .hero-art img{aspect-ratio:4/3;object-fit:cover;object-position:center 6%}
+  .hero-art .badge{position:static;display:block;right:auto;bottom:auto;top:auto;width:max-content;max-width:calc(100% - 22px);margin:10px auto 0;padding:8px 14px;background:#fff;backdrop-filter:none;border:1px solid var(--line);border-radius:14px;box-shadow:0 8px 20px rgba(24,50,77,.08);font-size:11.5px;line-height:1.25;text-align:center}
+}
